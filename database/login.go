@@ -1,6 +1,7 @@
-package bd
+package database
 
 import (
+	"github.com/MiguelAngelderobles/microblog/models"
 	"golang.org/x/crypto/bcrypt"
 )
 
