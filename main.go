@@ -1,13 +1,15 @@
 package main
- 
+
 import (
-    "log"
-    "github.com/lutrueba/microblog/handlers"
-    "github.com/lutrueba/microblog/bd"
+	"log"
+
+	"github.com/MiguelAngelderobles/microblog/handlers"
 )
-func main(){
-    if bd.ChequeoConnection() == 0 {
-        log.Fatal("Sin conexión a la BD")
-        return
-    }
-    handlers.Manejadores()
+
+func main() {
+	if database.ChequeoConnection() == 0 {
+		log.Fatal("Sin conexión a la BD")
+		return
+	}
+	handlers.Manejadores()
+}
